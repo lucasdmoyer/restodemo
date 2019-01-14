@@ -1,0 +1,15 @@
+
+<h2>Menu</h2>
+
+<div *ngFor="let item of menu">
+  <div class="menuitem row">
+      <div class="nameanddescription col-md-8">
+          <h4>{{item.name}}</h4>
+          <p>{{item.description}}</p>
+      </div> 
+      <div>
+        <p class="price col-md-4">Price: {{item.price}}</p>
+      </div>
+  </div> 
+  
+</div>
