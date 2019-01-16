@@ -15,6 +15,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { OrderpickupComponent } from './orderpickup/orderpickup.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FollowusComponent } from './followus/followus.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { FollowusComponent } from './followus/followus.component';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
