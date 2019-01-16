@@ -1,8 +1,3 @@
-.sectiontitle {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 6vw;
-    padding: 12px;
-}
 
 .menuitem {
     background-color: blanchedalmond;
@@ -37,4 +32,11 @@
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 4vw;
+}
+
+mat-form-field {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 4vw;
+    padding: 12px;
 }

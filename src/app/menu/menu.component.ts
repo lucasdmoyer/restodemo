@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem }  from '../menuitem';
 import { MenuService } from '../menu.service';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @Component({
   selector: 'app-menu',
@@ -9,7 +11,9 @@ import { MenuService } from '../menu.service';
 })
 export class MenuComponent implements OnInit {
 
-  menu: MenuItem[]; 
+  menu: MenuItem[];
+  selectedType: string;
+  foods = ["", "Appetizers", "Salads", "Pizza", "Pasta"];
 
   constructor(private menuService: MenuService) {
     
@@ -22,5 +26,9 @@ export class MenuComponent implements OnInit {
 
   getMenu(): void {
     this.menuService.getMenu().subscribe(menu => this.menu = menu);
+  }
+
+  search(food: String): void {
+    console.log(food);
   }
 }

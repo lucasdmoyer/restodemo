@@ -1,4 +1,16 @@
 .socialmedia {
     font-family: "Times New Roman", Times, serif;
     font-size: 10vw; 
+    background-color: blanchedalmond;
+    min-height: 100px;
+    width: 95%;
+    margin: 10px;
+    padding: 12px;
+
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+

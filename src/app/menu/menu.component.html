@@ -1,7 +1,18 @@
 
+
+
 <h2 class="sectiontitle">Menu</h2>
 
-<div *ngFor="let item of menu">
+<mat-form-field>
+    <mat-select placeholder="Filter menu" [(ngModel)]="selectedType" name="food" (selectionChange)="search(selectedType)">
+      <mat-option *ngFor="let food of foods" [value]="food">
+        {{food}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+<div *ngFor="let item of menu | myfilter:selectedType">
   <div class="menuitem row">
       <div class="nameanddescription col-md-8">
           <h4 class="itemname">{{item.name}}</h4>
@@ -11,5 +22,4 @@
         <p class="price col-md-4 itemprice">Price: {{item.price}}</p>
       </div>
   </div> 
-  
 </div>

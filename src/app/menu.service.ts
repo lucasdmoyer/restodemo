@@ -36,4 +36,13 @@ export class MenuService {
       return of(result as T);
     };
   }
+
+  filterMenu(term: string): Observable<MenuItem[]> {
+    return this.http.get<MenuItem[]>(`${this.menuUrl}/?type=${term}`).pipe(
+      tap(_ => this.log('filtered the menu')),
+      catchError(this.handleError('getMenu', []))
+    );
+  }
+
+  
 }

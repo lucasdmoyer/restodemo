@@ -17,6 +17,11 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FollowusComponent } from './followus/followus.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {MatSelectModule} from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Pipe, PipeTransform } from '@angular/core'; 
+import { MyFilterPipe} from './filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +32,8 @@ import { environment } from '../environments/environment';
     AboutusComponent,
     OrderpickupComponent,
     ContactusComponent,
-    FollowusComponent
+    FollowusComponent,
+    MyFilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,8 @@ import { environment } from '../environments/environment';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     NgbModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    MatSelectModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
