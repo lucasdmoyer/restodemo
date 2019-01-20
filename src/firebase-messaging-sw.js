@@ -14,6 +14,8 @@ firebase.initializeApp({
 // messages.
 const messaging = firebase.messaging();
 
+messaging.usePublicVapidKey("BI2MjATcJOl4dxj3FlLejoFe70L9_a6vDBkx5eVKKMqBtSqAwn1ZikNoWgJ-BMCj7gIaF0ljvE1b_l9IOB9uoE0");
+
 messaging.setBackgroundMessageHandler(function(payload) {
     const title = 'Hello Wordsfld from SW!';
     const options = {

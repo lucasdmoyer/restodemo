@@ -32,9 +32,10 @@ export class MessagingService {
   updateToken(userId, token) {
     // we can change this function to request our backend service
     this.angularFireAuth.authState.pipe(take(1)).subscribe(
-      () => {
-        const data = {};
-        data[userId] = token
+      user => {
+        if (!user) return;
+  
+        const data = { [user.uid]: token }
         this.angularFireDB.object('fcmTokens/').update(data)
       })
   }
