@@ -11,5 +11,6 @@ p {
         font-size: 50px;
         padding: 50px;
         background-color: #FCD7AD;
+        width: 110%;
     }
 }

@@ -21,6 +21,7 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         padding: 15px;
+        border-radius: 25px;
     }
 
     .description {
@@ -33,6 +34,9 @@
         padding: 12px;
         font-family: "Times New Roman", Times, serif;
         font-style: italic;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
     }
 
     .homeimages {
@@ -54,7 +58,7 @@
 
     .description {
         font-family: "Times New Roman", Times, serif;
-        font-size: 50px; 
+        font-size: 45px; 
         background-color: #FCD7AD;
         min-height: 100px;
         width: 100%;
@@ -63,6 +67,9 @@
         font-family: "Times New Roman", Times, serif;
         text-align: center;
         font-style: italic;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
     }
     
 
@@ -81,6 +88,7 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         padding: 15px;
+        border-radius: 25px;
     }
 
     .homeimages {
@@ -91,7 +99,9 @@
         width: 300px;
         height: 200px;
         margin:10px;
+        border-radius: 25px;
     }
+    
 }
 
 .option:hover {

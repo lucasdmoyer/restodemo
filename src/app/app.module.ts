@@ -26,8 +26,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { MessagingService } from './messaging.service';
 import { AsyncPipe } from '../../node_modules/@angular/common';
-//import { environment } from '../environments/environment';
-import { environment} from '../environments/environment.prod';
+import { environment } from '../environments/environment';
+//import { environment} from '../environments/environment.prod';
 
 @NgModule({
   declarations: [

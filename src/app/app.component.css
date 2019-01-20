@@ -1,7 +1,6 @@
 
 .display {
     width: 100%;
-    max-width: 100%;
     background-color: #A6B1E1;
 }
 
@@ -22,12 +21,48 @@ html, body {
     background-color: #A57548;
 }
 
+.notification {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 4vw;
+    color: #5296A5;
+    width: 100%;
+    background-color:#F6C28B;
+}
+
+.bottominfo {
+    background-color:#F6C28B;
+    width: 100%;
+    color: #5296A5;
+    font-size: 15px;
+    text-align: center;
+}
+
 @media screen and (min-width: 500px) {
     h1 {
         font-family: "Times New Roman", Times, serif;
         font-style: italic;
-        font-size: 150px;
+        font-size: 20vw;
         color: #F6C28B;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        text-align: center;
+    }
+    .display {
+        width: 110%;
+        background-color: #A6B1E1;
+
+    }
+
+    .bottominfo {
+        width: 110%;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 620px) {
+    .display {
+        width: 110%;
+        background-color: #A6B1E1;
     }
 }
