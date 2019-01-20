@@ -1,11 +1,12 @@
 {
   "name": "restodemo",
    "short_name": "restodemo",
-   "theme_color": "#1976d2",
-   "background_color": "#fafafa",
+   "theme_color": "#A6B1E1",
+   "background_color": "#A57548",
    "display": "standalone",
    "scope": "/",
    "start_url": "/",
+   "gcm_sender_id": "103953800507",
   "icons": [
    {
     "src": "assets/icons/android-icon-36x36.png",
