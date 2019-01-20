@@ -30,7 +30,7 @@ tr {
 
 @media screen and (min-width: 500px) {
     .contactcontainer {
-        width:110%;
+        width:100%;
     }
     p, address {
         font-family: "Times New Roman", Times, serif;
