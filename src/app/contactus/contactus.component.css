@@ -2,7 +2,61 @@ p, address {
     font-family: "Times New Roman", Times, serif;
     font-size: 5vw;
     padding: 12px;
-    background-color:blanchedalmond;
+    background-color:#FCD7AD;
 }
 
 
+th {
+    text-align: right;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5vw;
+    background-color:#FCD7AD;
+    padding: 10px;
+    
+  }
+
+tr {
+    background-color:#FCD7AD;
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 5vw;
+}
+
+.hours {
+    width: 100%;
+    background-color:#FCD7AD;
+}
+
+@media screen and (min-width: 500px) {
+    p, address {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+        padding: 12px;
+        background-color:#FCD7AD;
+    }
+    
+    
+    th {
+        text-align: right;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+        background-color:#FCD7AD;
+        padding: 10px;
+        
+      }
+    
+    tr {
+        background-color:#FCD7AD;
+        font-family: "Times New Roman", Times, serif;
+        width: 100%;
+        padding: 10px;
+        font-size: 50px;
+    }
+    
+    .hours {
+        width: 100%;
+        background-color:#FCD7AD;
+    }
+    
+}

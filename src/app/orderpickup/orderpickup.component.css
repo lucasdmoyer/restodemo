@@ -1,0 +1,25 @@
+.order {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10vw; 
+    background-color: #FCD7AD;
+    min-height: 100px;
+    width: 95%;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 500px) {
+    .order {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px; 
+        background-color: #FCD7AD;
+        min-height: 100px;
+        width: 100%;
+        margin: 10px;
+        padding: 12px;
+        text-align: center;
+    
+    }
+}

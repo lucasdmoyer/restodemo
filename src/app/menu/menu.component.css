@@ -1,42 +1,93 @@
 
-.menuitem {
-    background-color: blanchedalmond;
-    min-height: 100px;
-    width: 95%;
-    margin: 10px;
-    padding: 12px;
+@media screen and (max-width: 500px) {
+    .menuitem {
+        background-color: #FCD7AD;
+        min-height: 100px;
+        width: 95%;
+        margin: 10px;
+        padding: 12px;
+    }
+    
+    .nameanddescription {
+        width: 80%;
+    }
+    .price {
+        float: right;
+        width: 20%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 3vw;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .itemname {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 5vw;
+        text-decoration: underline;
+    }
+    
+    .itemdescription {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 4vw;
+    }
+    
+    mat-form-field {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 4vw;
+        padding: 12px;
+    }
+    
 }
 
-.nameanddescription {
-    width: 80%;
-}
-.price {
-    float: right;
-    width: 20%;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 3vw;
+@media screen and (min-width: 500px) {
+    .menuitem {
+        background-color: #FCD7AD;
+        height: 400px;
+        width: 500px;
+        margin: 10px;
+        padding: 12px;
+    }
+    
+    .nameanddescription {
+        width: 80%;
+    }
+    .price {
+        float: right;
+        width: 20%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .itemname {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    
+    .itemdescription {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+    }
+    
+    mat-form-field {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        padding-left: 50px;
+    }
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.itemname {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 5vw;
-    text-decoration: underline;
-}
-
-.itemdescription {
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    font-size: 4vw;
-}
-
-mat-form-field {
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    font-size: 4vw;
-    padding: 12px;
-}

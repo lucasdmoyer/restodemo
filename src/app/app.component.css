@@ -2,18 +2,32 @@
 .display {
     width: 100%;
     max-width: 100%;
-    background-image: url("../assets/images/restaurant.jpg")
+    background-color: #A6B1E1;
 }
 
 h1 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 20vw;
-    color: #FEFEFE;
+    color: #F6C28B;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 p {
     font-family: "Times New Roman", Times, serif;
     font-size: 5vw;
+}
+
+html, body {
+    background-color: #A57548;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 150px;
+        color: #F6C28B;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
 }

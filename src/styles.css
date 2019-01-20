@@ -8,9 +8,16 @@
     font-style: italic;
 }
 
+@media screen and (min-width: 500px) {
+    .sectiontitle {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 90px;
+        padding: 15px;
+        font-style: italic;
+    }
+}
 
 
-body, html {
-    background-image: linear-gradient(36deg, #FEDC7D, #A55800) ;
-    background-size: cover;
+html, body {
+    background-color: #A57548;
 }

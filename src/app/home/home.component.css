@@ -1,28 +1,98 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 500px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .option {
+        width: 40%;
+        margin: 5%;
+        text-align: center;
+        line-height: 75px;
+        background-color: #FCD7AD;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 10vw;
+        color: #5296A5;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        padding: 15px;
+    }
+
+    .description {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px; 
+        background-color: #FCD7AD;
+        min-height: 100px;
+        width: 95%;
+        margin: 10px;
+        padding: 12px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .homeimages {
+        display: none;
+    }
+    
     
 }
 
-.option {
-    width: 40%;
-    margin: 5%;
-    text-align: center;
-    line-height: 75px;
-    background-color: #ff9933;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    font-size: 10vw;
-    color: #990033;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    padding: 15px;
+
+@media screen and (min-width: 500px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .description {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px; 
+        background-color: #FCD7AD;
+        min-height: 100px;
+        width: 100%;
+        margin: 10px;
+        padding: 12px;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+    }
+    
+
+
+    .option {
+        width: 200px;
+        height: 160px;
+        margin: 10px;
+        text-align: center;
+        background-color: #FCD7AD;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 45px;
+        color: #5296A5;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        padding: 15px;
+    }
+
+    .homeimages {
+        width: 100%;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+        margin:10px;
+    }
 }
 
-.option:focus {
+.option:hover {
     background-color:  #994d00
 }
 
