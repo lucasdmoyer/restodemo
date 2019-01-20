@@ -14,14 +14,17 @@
 @media screen and (min-width: 500px) {
     .order {
         font-family: "Times New Roman", Times, serif;
-        font-size: 50px; 
+        font-size: 25px; 
         background-color: #FCD7AD;
-        min-height: 100px;
-        width: 100%;
+        margin: 0 auto;
+        width: 50%;
         margin: 10px;
         padding: 12px;
         text-align: center;
         border-radius: 25px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 51%;
     
     }
 }

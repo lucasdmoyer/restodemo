@@ -32,20 +32,28 @@ tr {
     .contactcontainer {
         width:100%;
     }
+
+    .contact {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 51%;
+    }
     p, address {
         font-family: "Times New Roman", Times, serif;
-        font-size: 50px;
+        font-size: 25px;
         padding: 12px;
         background-color:#FCD7AD;
+        border-radius: 25px;
     }
     
     
     th {
         text-align: right;
         font-family: "Times New Roman", Times, serif;
-        font-size: 50px;
+        font-size: 25px;
         background-color:#FCD7AD;
         padding: 10px;
+        border-radius: 25px;
         
       }
     
@@ -54,12 +62,13 @@ tr {
         font-family: "Times New Roman", Times, serif;
         width: 100%;
         padding: 10px;
-        font-size: 50px;
+        font-size: 25px;
     }
     
     .hours {
         width: 100%;
         background-color:#FCD7AD;
+        border-radius: 25px;
     }
     
 }
