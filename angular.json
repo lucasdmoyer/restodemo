@@ -13,9 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/restodemo",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "outputPath": "public",
+            "index": "./index.html",
+            "main": "./main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "restodemo"
+  "defaultProject": "restodemo-lucas"
 }

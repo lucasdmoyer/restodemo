@@ -48,6 +48,9 @@
 
 
 @media screen and (min-width: 500px) {
+    .option:hover {
+        background-color:  #994d00
+    }
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -103,9 +106,7 @@
     
 }
 
-.option:hover {
-    background-color:  #994d00
-}
+
 
 .display {
     height: 250px;
