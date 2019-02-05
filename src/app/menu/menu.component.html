@@ -13,14 +13,17 @@
 
 <div class="flex-container">
   <div *ngFor="let item of menu | myfilter:selectedType">
-      <div class="menuitem row">
-          <div class="nameanddescription col-md-8">
-              <h4 class="itemname">{{item.name}}</h4>
-              <p class="itemdescription">{{item.description}}</p>
-          </div> 
-          <div>
-            <p class="price col-md-4 itemprice">Price: {{item.price}}</p>
+      <div class="menuitem container">
+          <div class="row">
+              <div class="nameanddescription col">
+                  <h4 class="itemname">{{item.name}}</h4>
+                  <p class="itemdescription">{{item.description}}</p>
+              </div> 
+              <div>
+                <p class="price col itemprice">Price: {{item.price}}</p>
+              </div>
           </div>
+          
       </div> 
     </div>
       

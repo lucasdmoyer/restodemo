@@ -1,13 +1,18 @@
 .socialmedia {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 10vw; 
-    background-color: #FCD7AD;
+    
     min-height: 100px;
     width: 95%;
     margin: 10px;
     padding: 12px;
     border-radius: 25px;
+    background-color: #E36588;
+}
 
+a {
+    font-family: 'Inconsolata', monospace;
+    color: white;
 }
 
 .flex-container {
@@ -16,25 +21,29 @@
     text-align: center;
     align-content: center;
     width: 100%;
+    background-color: #9A275A;
+
 }
 
 @media screen and (min-width: 500px) {
     .socialmedia {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 25px; 
-        background-color: #FCD7AD;
+        font-size: 35px; 
         min-height: 100px;
-        border-radius: 25px;
-        margin: auto;
-        margin-bottom: 20px;
-        width: 51%;
-    
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
     }
-    
+
     .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
+
+
+    
     
 }

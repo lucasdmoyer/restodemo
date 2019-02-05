@@ -1,15 +1,14 @@
 p {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Inconsolata', monospace;
+    color: white;
     font-size: 5vw;
     padding: 12px;
-    background-color: #FCD7AD;
+    background-color: #9A275A;
 }
 
 @media screen and (min-width: 500px) {
     p {
-        font-family: "Times New Roman", Times, serif;
         font-size: 25px;
         padding: 50px;
-        background-color: #FCD7AD;
     }
 }

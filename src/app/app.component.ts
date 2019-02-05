@@ -19,5 +19,5 @@ export class AppComponent {
     this.messagingService.receiveMessage()
     this.message = this.messagingService.currentMessage
   }
-  title = 'restodemo';
+  title = 'Spagetti Lounge';
 }

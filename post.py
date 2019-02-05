@@ -24,5 +24,6 @@ for id in data["fcmTokens"]:
         }
 
     response = requests.request("POST", url, data=payload, headers=headers)
-    index++
-print("There are a total of " + str(idex))
+
+
+print("There are a total of " + str(index))

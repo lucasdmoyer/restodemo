@@ -1,23 +1,32 @@
+.contact {
+    background-color: #9A275A;
+    color: white;
+}
+
 p, address {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 5vw;
     padding: 12px;
-    background-color:#FCD7AD;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
 }
 
 
 th {
     text-align: right;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 5vw;
-    background-color:#FCD7AD;
     padding: 10px;
     
   }
 
 tr {
-    background-color:#FCD7AD;
-    font-family: "Times New Roman", Times, serif;
+
+    font-family: 'Inconsolata', monospace;
     width: 100%;
     padding: 10px;
     font-size: 5vw;
@@ -25,7 +34,6 @@ tr {
 
 .hours {
     width: 100%;
-    background-color:#FCD7AD;
 }
 
 @media screen and (min-width: 500px) {
@@ -37,29 +45,25 @@ tr {
         margin: auto;
         margin-bottom: 20px;
         width: 51%;
+        border-radius: 25px;
+        background-color: #9A275A;
     }
     p, address {
-        font-family: "Times New Roman", Times, serif;
         font-size: 25px;
         padding: 12px;
-        background-color:#FCD7AD;
-        border-radius: 25px;
+        
     }
     
     
     th {
-        text-align: right;
-        font-family: "Times New Roman", Times, serif;
         font-size: 25px;
-        background-color:#FCD7AD;
+
         padding: 10px;
-        border-radius: 25px;
+
         
       }
     
     tr {
-        background-color:#FCD7AD;
-        font-family: "Times New Roman", Times, serif;
         width: 100%;
         padding: 10px;
         font-size: 25px;
@@ -67,8 +71,6 @@ tr {
     
     .hours {
         width: 100%;
-        background-color:#FCD7AD;
-        border-radius: 25px;
     }
     
 }

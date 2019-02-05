@@ -2,7 +2,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 .sectiontitle {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 9vw;
     padding: 15px;
     font-style: italic;
@@ -10,14 +10,24 @@
 
 @media screen and (min-width: 500px) {
     .sectiontitle {
-        font-family: "Times New Roman", Times, serif;
         font-size: 90px;
-        padding: 15px;
-        font-style: italic;
     }
 }
 
 
 html, body {
-    background-color: #A57548;
+    background-color: #9AC4F8;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.bottominfo {
+    background-color:#E36588;
+    width: 100%;
+    color: #99EDCC;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
