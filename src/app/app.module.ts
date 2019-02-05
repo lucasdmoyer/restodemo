@@ -6,7 +6,6 @@ import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'; // from npm install angular-in-memory-web-api --save
 import { InMemoryDataService } from './in-memory-data.service';
 import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -27,6 +26,8 @@ import { AngularFireModule } from '@angular/fire';
 import { MessagingService } from './messaging.service';
 import { AsyncPipe } from '../../node_modules/@angular/common';
 import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { NotifyComponent } from './notify/notify.component';
 //import { environment} from '../environments/environment.prod';
 
 @NgModule({
@@ -40,13 +41,13 @@ import { environment } from '../environments/environment';
     ContactusComponent,
     FollowusComponent,
     MyFilterPipe,
+    NotifyComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     NgbModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     MatSelectModule,
@@ -54,6 +55,7 @@ import { environment } from '../environments/environment';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireMessagingModule,
+    AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [MessagingService, AsyncPipe],

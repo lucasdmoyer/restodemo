@@ -9,15 +9,22 @@ import { MessagingService } from "../app/messaging.service";
 })
 export class AppComponent {
   message;
+  users = [];
+  newUser = false;
 
   constructor(private messagingService: MessagingService) {
   }
 
   ngOnInit() {
-    const userId = new Date();
-    this.messagingService.requestPermission(userId)
+    this.addUser();
+    this.messagingService.requestPermission('asdf')
     this.messagingService.receiveMessage()
     this.message = this.messagingService.currentMessage
   }
   title = 'Spagetti Lounge';
+
+  addUser(): void {
+    const userId = new Date();
+  }
+
 }

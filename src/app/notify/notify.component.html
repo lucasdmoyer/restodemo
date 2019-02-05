@@ -1,0 +1,9 @@
+
+<form (ngSubmit)="onSubmit()" #notifyForm="ngForm">
+ 
+  <div class="form-group">
+    <label for="name">Message</label>
+    <input type="text" class="form-control" id="message" placeholder="Type your notification" required [(ngModel)]="model" name="name" >
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="sendMessage(); notifyForm.reset()" [disabled]="!notifyForm.form.valid">Submit</button>
+</form>
