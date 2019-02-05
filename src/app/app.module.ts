@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { NotifyComponent } from './notify/notify.component';
 //import { environment} from '../environments/environment.prod';
+//import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'; // from npm install angular-in-memory-web-api --save
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { NotifyComponent } from './notify/notify.component';
     NotifyComponent,
   ],
   imports: [
+    //HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),
     BrowserModule,
     FormsModule,
     AppRoutingModule,

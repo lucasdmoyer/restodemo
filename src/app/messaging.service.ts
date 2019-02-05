@@ -41,7 +41,8 @@ export class MessagingService {
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
-      'Authorization': 'key=AAAALFAGDEs:APA91bEACwdhcPVD6D7rLZXKRV_i-xtEg41YcOqqQvDWf_jhHF_cEaXZpxi5e5_qjf8W_S2S4RwxIuwdeHkybPIP5lGSol2OQZ8A6hy3i-E7fK5INC_8qcy_DoyMjxvQta5w8s1kC-Km'
+      'Authorization': 'key=AAAALFAGDEs:APA91bEACwdhcPVD6D7rLZXKRV_i-xtEg41YcOqqQvDWf_jhHF_cEaXZpxi5e5_qjf8W_S2S4RwxIuwdeHkybPIP5lGSol2OQZ8A6hy3i-E7fK5INC_8qcy_DoyMjxvQta5w8s1kC-Km',
+      //'Access-Control-Allow-Origin':"https://fcm.googleapis.com/fcm/send"
     })
   };
 
@@ -57,19 +58,54 @@ export class MessagingService {
   } 
 
   sendMessage(message: string) {
-    this.payload = {
-        "notification": {
-            "title": "Spagetti Lounge",
-            "body": message,
-            "click_action": "https://restodemo.com",
-            "icon": "https://restodemo.com/assets/images/1.jpg"
-        },
-        "to": "dNppLg6CvwQ:APA91bEOnFDx97s6w3zlmQHMnVlatEsew0qGJLtKUC8hTuALPgcIMVpZ845zTRJwC7gGW8leVJagSQUoSX1vUECYfolslWCfYwxYuPPtBi5Xx51cb6DbBdgCLXr4zjvlHdix4HD89ROz",
-        "collapse_key":"type_a",
-    }
-    return this.http.post(this.usersUrl, this.payload, this.httpOptions).toPromise()
-      .then(this.extractData)
-      .catch(this.handleErrorPromise);  
+    console.log('called');
+    this.afs.collection<any>('users').valueChanges().subscribe(users => {
+      //console.log(users);
+      users.forEach(obj => {
+        this.payload = {
+          "notification": {
+              "title": "Spagetti Lounge",
+              "body": message,
+              "click_action": "https://restodemo.com",
+              "icon": "https://restodemo.com/assets/images/1.jpg"
+          },
+          "to": obj.token,
+          "collapse_key":"type_a",
+        }
+        console.log("payload made");
+        this.http.post(this.usersUrl, this.payload, this.httpOptions).toPromise()
+        .then(this.extractData)
+        .catch(this.handleErrorPromise);
+        console.log(this.payload);
+
+      });
+    })
+   
+    
+    /*this.getUsers().subscribe(users => {
+      console.log("hi");
+      users.forEach(obj => {
+        this.payload = {
+          "notification": {
+              "title": "Spagetti Lounge",
+              "body": message,
+              "click_action": "https://restodemo.com",
+              "icon": "https://restodemo.com/assets/images/1.jpg"
+          },
+          "to": obj.token,
+          "collapse_key":"type_a",
+        }
+        console.log("payload made");
+        this.http.post(this.usersUrl, this.payload, this.httpOptions).toPromise()
+        .then(this.extractData)
+        .catch(this.handleErrorPromise);
+        console.log(this.payload);
+
+      });
+       */
+      
+  
+    return;
   }
 
   /**
@@ -113,14 +149,13 @@ export class MessagingService {
     this.angularFireMessaging.requestToken.subscribe(
       (token) => {
         this.getUsers().subscribe(users => {
+          let index=0;
           users.forEach(obj => {
             if( obj.token == token) {
-              console.log("we set it to true");
               duplicate = true;
             }
+            index = index + 1;
           });
-
-          console.log("final state is " + duplicate);
           if(!duplicate) {
             this.updateToken(userId, token);
           }        
