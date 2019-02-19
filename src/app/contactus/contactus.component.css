@@ -1,5 +1,5 @@
 .contact {
-    background-color: #9A275A;
+    background-color: #F26968;
     color: white;
 }
 
@@ -46,7 +46,6 @@ tr {
         margin-bottom: 20px;
         width: 51%;
         border-radius: 25px;
-        background-color: #9A275A;
     }
     p, address {
         font-size: 25px;

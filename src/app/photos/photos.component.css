@@ -1,16 +1,47 @@
-.photos {
-    width: 100%;
+
+
+
+.carousel-caption {
+    background-color: #FFEAB8;
+    color: #353A55;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #FFEAB8;
+}
+
+.carousel-indicators .active {
+    background-color: #353A55;
 }
 
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width:100%;
-    
+
+p {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 5vw;
+    padding: 12px;
+    background-color: #F26968;
+    margin-bottom: 15px;
 }
 
-.flex-container > div {
-    width: 45%;
-    margin: 5px;
+@media screen and (min-width: 500px) {
+    p {
+        font-size: 25px;
+        padding: 50px;
+    }
+
+
+
+    .slide {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        max-width: 750px;
+    }
 }

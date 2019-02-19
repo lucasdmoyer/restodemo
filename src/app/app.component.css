@@ -9,6 +9,7 @@ h1 {
     margin-right: auto;
     width: 100%;
     background-color: #E36588;
+    display:none;
 }
 
 p {
@@ -26,12 +27,19 @@ p {
     background-color:#F6C28B;
 }
 
+nav {
+    color: #323339;
+    background-color: #F2AD9F;
+}
+
 
 @media screen and (min-width: 500px) {
     h1 {
         font-style: italic;
         font-size: 90px;
         text-align: center;
+        
     }
 
 }
+

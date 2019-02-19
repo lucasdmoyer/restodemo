@@ -29,6 +29,12 @@ export class MenuComponent implements OnInit {
   }
 
   search(food: String): void {
-    console.log(food);
+    console.log("searching!");
+    this.menuService.getMenu().subscribe(menu => {
+      console.log(menu);
+      menu.forEach(obj => {
+        console.log(obj);
+      })
+    })
   }
 }

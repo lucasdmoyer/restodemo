@@ -1,47 +1,28 @@
 import { Injectable } from '@angular/core';
 import { MenuItem } from './menuitem';
 import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { catchError, map, tap } from 'rxjs/operators';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
+  menuCollection: AngularFirestoreCollection<MenuItem>;
+  menu: Observable<MenuItem[]>
 
-  constructor(private http: HttpClient) { }
+  constructor(private afs: AngularFirestore) {
+    this.menuCollection = afs.collection<MenuItem>('menu');
+    this.menu = this.menuCollection.valueChanges();
+  }
 
-  private menuUrl = 'api/menu';
-
-  private httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
 
   getMenu(): Observable<MenuItem[]> {
-    return this.http.get<MenuItem[]>(this.menuUrl)
-      .pipe(
-        tap(_ => this.log('got the menu')),
-        catchError(this.handleError('getMenu', []))
-      );
+    return this.menu;
   }
 
-  private log(message: string) {
-    console.log(message);
-  }
-
-  private handleError<T> (operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-      console.error(error);
-      this.log(`$(operation} failed: ${error.message}`);
-      return of(result as T);
-    };
-  }
-
-  filterMenu(term: string): Observable<MenuItem[]> {
-    return this.http.get<MenuItem[]>(`${this.menuUrl}/?type=${term}`).pipe(
-      tap(_ => this.log('filtered the menu')),
-      catchError(this.handleError('getMenu', []))
-    );
+  private filterMenu(term: string) {
+    return this.afs.collection('menu', ref => ref.where('type', '==', term));
   }
 
   

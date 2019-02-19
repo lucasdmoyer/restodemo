@@ -17,17 +17,21 @@
 
 html, body {
     background-color: #9AC4F8;
+    background-image: url(./assets/images/icecreambackground.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100%;
     overflow: auto;
     padding-bottom: 20px;
 }
 
 .bottominfo {
-    background-color:#E36588;
+    background-color:#F2AD9F;
     width: 100%;
-    color: #99EDCC;
+    color: #323339;
     font-size: 15px;
     text-align: center;
     position: absolute;
     bottom: 0;
 }
+

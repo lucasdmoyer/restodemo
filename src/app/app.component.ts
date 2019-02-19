@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MessagingService } from "../app/messaging.service";
-
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +21,14 @@ export class AppComponent {
     this.messagingService.receiveMessage()
     this.message = this.messagingService.currentMessage
   }
-  title = 'Spagetti Lounge';
+  title = "Rick's Cafe";
 
   addUser(): void {
     const userId = new Date();
+  }
+
+  collapse(): void {
+    $('.navbar-toggler').click(); //bootstrap 4.x
   }
 
 }

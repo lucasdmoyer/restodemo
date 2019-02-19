@@ -1,6 +1,6 @@
 
 .menuitem {
-    background-color: #9A275A;
+    background-color: #F26968;
     color: white;
     min-height: 100px;
     width: 95%;
@@ -9,14 +9,12 @@
     border-radius: 25px;
 }
 
-.nameanddescription {
-}
 .price {
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
-    background-color: #CB958E;
+    background-color: #6CBF84;
     border-radius: 25px;
-    color: black;
+    color: #323339;
     padding: 1px;
 }
 
@@ -51,8 +49,7 @@ mat-form-field {
         padding: 12px;
     }
     
-    .nameanddescription {
-    }
+
     .price {
         font-size: 20px;
         position: relative;

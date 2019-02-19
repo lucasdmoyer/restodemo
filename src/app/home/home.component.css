@@ -11,6 +11,19 @@
     text-align: center;
 }
 
+.displaycontainer {
+    width: 100%;
+}
+
+.displayimage {
+    border-radius: 25px;
+    margin-top: 15px;
+    max-width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +34,21 @@
 
 .description {
     font-family: 'Inconsolata', monospace;
+    margin-top: 10px;
     font-style: italic;
     align-items: center;
     text-align: center;
     border-radius: 25px;
-    background-color: #9A275A;
+    background-color: #F26968;
     color: white;
 
 }
 .option:hover {
     background-color:  #994d00
+}
+
+.btn, .btn-primary .btn-sm {
+    background-color: #6CBF84;
 }
 
 
@@ -57,10 +75,6 @@
 
     }
 
-    .homeimages {
-        display: none;
-    }
-    
     
 }
 
@@ -85,16 +99,12 @@
         font-size: 30px;
     }
 
-    .homeimages {
-        width: 100%;
+    .displayimage {
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    img {
-        width: 300px;
-        height: 200px;
-        margin:10px;
-        border-radius: 25px;
-    }
     
 }
 
