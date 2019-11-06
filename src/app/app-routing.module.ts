@@ -9,6 +9,7 @@ import { OrderpickupComponent } from './orderpickup/orderpickup.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FollowusComponent } from './followus/followus.component';
 import { NotifyComponent } from './notify/notify.component';
+import { ArfoodComponent } from './arfood/arfood.component';
 
 const routes: Routes = [
   { path: 'menu', component: MenuComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'orderpickup', component: OrderpickupComponent},
   { path: 'contactus', component: ContactusComponent},
   { path: 'followus', component: FollowusComponent},
-  { path: 'notify', component: NotifyComponent}
+  { path: 'notify', component: NotifyComponent},
+  { path: 'ar', component: ArfoodComponent}
 
 ]
 

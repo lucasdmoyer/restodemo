@@ -28,6 +28,7 @@ import { AsyncPipe } from '../../node_modules/@angular/common';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { NotifyComponent } from './notify/notify.component';
+import { ArfoodComponent } from './arfood/arfood.component';
 //import { environment} from '../environments/environment.prod';
 //import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'; // from npm install angular-in-memory-web-api --save
 
@@ -43,6 +44,7 @@ import { NotifyComponent } from './notify/notify.component';
     FollowusComponent,
     MyFilterPipe,
     NotifyComponent,
+    ArfoodComponent,
   ],
   imports: [
     //HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}),

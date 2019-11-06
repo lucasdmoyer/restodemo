@@ -1,6 +1,7 @@
 export class MenuItem {
-    id: number;
-    name: string;
-    price: number;
+    title: string;
     type: string;
+    data: number[];
+    columnNames: string[];
+    options: string[];
 }

@@ -1,0 +1,71 @@
+.menuitem {
+    background-color: #F26968;
+    color: white;
+    min-height: 100px;
+    width: 95%;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.price {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    background-color: #6CBF84;
+    border-radius: 25px;
+    color: #323339;
+    padding: 1px;
+}
+
+.itemname {
+    font-family: 'Inconsolata', monospace;
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+.itemdescription {
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+mat-form-field {
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+    font-size: 4vw;
+    padding: 12px;
+}
+
+@media screen and (min-width: 500px) {
+    .menuitem {
+        height: 300px;
+        width: 400px;
+        margin: 10px;
+        padding: 12px;
+    }
+    .price {
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+        text-align: center;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .itemname {
+        font-size: 30px;
+    }
+    .itemdescription {
+        font-style: italic;
+        font-size: 20px;
+    }
+    mat-form-field {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+}
